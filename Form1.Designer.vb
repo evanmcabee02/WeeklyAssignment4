@@ -22,28 +22,28 @@ Partial Class frmairbnb
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.picAirBnB = New System.Windows.Forms.PictureBox()
         Me.btnDisplayCost = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.lbl = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblNumberOfNights = New System.Windows.Forms.Label()
+        Me.lblAirBnB = New System.Windows.Forms.Label()
+        Me.lblCostOfStay = New System.Windows.Forms.Label()
         Me.txtNights = New System.Windows.Forms.TextBox()
         Me.lblTotalCost = New System.Windows.Forms.Label()
         Me.lblCost = New System.Windows.Forms.Label()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picAirBnB, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'picAirBnB
         '
-        Me.PictureBox1.Image = Global.WeeklyAssignment4.My.Resources.Resources.airbnb
-        Me.PictureBox1.Location = New System.Drawing.Point(10, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(357, 451)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.picAirBnB.Image = Global.WeeklyAssignment4.My.Resources.Resources.airbnb
+        Me.picAirBnB.Location = New System.Drawing.Point(10, 3)
+        Me.picAirBnB.Name = "picAirBnB"
+        Me.picAirBnB.Size = New System.Drawing.Size(357, 451)
+        Me.picAirBnB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picAirBnB.TabIndex = 0
+        Me.picAirBnB.TabStop = False
         '
         'btnDisplayCost
         '
@@ -76,35 +76,35 @@ Partial Class frmairbnb
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
-        'Label2
+        'lblNumberOfNights
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(392, 146)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(254, 33)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Number of Nights:"
+        Me.lblNumberOfNights.AutoSize = True
+        Me.lblNumberOfNights.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNumberOfNights.Location = New System.Drawing.Point(392, 146)
+        Me.lblNumberOfNights.Name = "lblNumberOfNights"
+        Me.lblNumberOfNights.Size = New System.Drawing.Size(254, 33)
+        Me.lblNumberOfNights.TabIndex = 5
+        Me.lblNumberOfNights.Text = "Number of Nights:"
         '
-        'lbl
+        'lblAirBnB
         '
-        Me.lbl.AutoSize = True
-        Me.lbl.Font = New System.Drawing.Font("Comic Sans MS", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl.Location = New System.Drawing.Point(425, 26)
-        Me.lbl.Name = "lbl"
-        Me.lbl.Size = New System.Drawing.Size(321, 55)
-        Me.lbl.TabIndex = 6
-        Me.lbl.Text = "Orlando AirBnB"
+        Me.lblAirBnB.AutoSize = True
+        Me.lblAirBnB.Font = New System.Drawing.Font("Comic Sans MS", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAirBnB.Location = New System.Drawing.Point(425, 26)
+        Me.lblAirBnB.Name = "lblAirBnB"
+        Me.lblAirBnB.Size = New System.Drawing.Size(321, 55)
+        Me.lblAirBnB.TabIndex = 6
+        Me.lblAirBnB.Text = "Orlando AirBnB"
         '
-        'Label4
+        'lblCostOfStay
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(392, 221)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(185, 33)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Cost of Stay:"
+        Me.lblCostOfStay.AutoSize = True
+        Me.lblCostOfStay.Font = New System.Drawing.Font("Arial Black", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCostOfStay.Location = New System.Drawing.Point(392, 221)
+        Me.lblCostOfStay.Name = "lblCostOfStay"
+        Me.lblCostOfStay.Size = New System.Drawing.Size(185, 33)
+        Me.lblCostOfStay.TabIndex = 7
+        Me.lblCostOfStay.Text = "Cost of Stay:"
         '
         'txtNights
         '
@@ -142,29 +142,29 @@ Partial Class frmairbnb
         Me.Controls.Add(Me.lblCost)
         Me.Controls.Add(Me.lblTotalCost)
         Me.Controls.Add(Me.txtNights)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.lbl)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblCostOfStay)
+        Me.Controls.Add(Me.lblAirBnB)
+        Me.Controls.Add(Me.lblNumberOfNights)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnDisplayCost)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.picAirBnB)
         Me.Name = "frmairbnb"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AirBnB Reservations"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picAirBnB, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents picAirBnB As PictureBox
     Friend WithEvents btnDisplayCost As Button
     Friend WithEvents btnClear As Button
     Friend WithEvents btnExit As Button
-    Friend WithEvents Label2 As Label
-    Friend WithEvents lbl As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lblNumberOfNights As Label
+    Friend WithEvents lblAirBnB As Label
+    Friend WithEvents lblCostOfStay As Label
     Friend WithEvents txtNights As TextBox
     Friend WithEvents lblTotalCost As Label
     Friend WithEvents lblCost As Label
